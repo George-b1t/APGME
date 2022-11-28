@@ -1,3 +1,21 @@
 .container {
   display: flex;
+  justify-content: center;
+
+  .subContainer {
+    width: 100%;
+    max-width: 1220px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 20px;
+
+    margin-top: 40px;
+
+    background: #ffffff;
+
+    padding: 40px;
+  }
 }

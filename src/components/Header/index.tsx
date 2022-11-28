@@ -48,7 +48,10 @@ function Header() {
 				<nav className={styles.headerNavigator}>
 					<Link href="/estatuto">Estatuto</Link>
 					<Link href="/ata_fundacao">Ata de Fundação</Link>
-					<p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>Mais</p>
+					<Link href="/finalidade_especifica">Finalidade Específica</Link>
+					<Link href="/podcast">Podcast</Link>
+					<Link href="/projetos">Projetos</Link>
+					{/* <p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>Mais</p> */}
 					<Menu model={items} popup ref={menu} id="popup_menu" />
 				</nav>
 			</div>
