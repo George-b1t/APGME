@@ -18,19 +18,19 @@ function Header() {
 				{
 					label: 'FINALIDADE ESPECÍFICA',
 					command: () => {
-						router.push("/estatuto")
+						router.push("/finalidade_especifica")
 					}
 				},
 				{
 					label: 'PODCAST',
 					command: () => {
-						router.push("/estatuto")
+						router.push("/podcast")
 					}
 				},
 				{
 					label: 'PROJETOS',
 					command: () => {
-						router.push("/estatuto")
+						router.push("/projetos")
 					}
 				}
 			]
