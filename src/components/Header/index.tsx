@@ -4,26 +4,33 @@ import { Menu } from "primereact/menu";
 import { Button } from "primereact/button";
 
 import styles from "./styles.module.scss";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Header() {
 	const menu: any = useRef(null);
+
+	const router = useRouter();
 	
 	const items = [
 		{
 			items: [
 				{
-					label: 'Finalidade Específica',
+					label: 'FINALIDADE ESPECÍFICA',
 					command: () => {
+						router.push("/estatuto")
 					}
 				},
 				{
-					label: 'Podcast',
+					label: 'PODCAST',
 					command: () => {
+						router.push("/estatuto")
 					}
 				},
 				{
-					label: 'Projetos',
+					label: 'PROJETOS',
 					command: () => {
+						router.push("/estatuto")
 					}
 				}
 			]
@@ -32,17 +39,19 @@ function Header() {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.leftHeader}>
-				<img src="logo.png" />
-				<h1>A.P.G.M.E</h1>
+			<div className={styles.subContainer}>
+				<Link href="/" className={styles.leftHeader}>
+					<img src="logo.png" />
+					<h1>A.P.G.M.E</h1>
+				</Link>
+				
+				<nav className={styles.headerNavigator}>
+					<Link href="/estatuto">Estatuto</Link>
+					<Link href="/ata_fundacao">Ata de Fundação</Link>
+					<p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>Mais</p>
+					<Menu model={items} popup ref={menu} id="popup_menu" />
+				</nav>
 			</div>
-			
-			<nav className={styles.headerNavigator}>
-				<p>Estatuto</p>
-				<p>Ata de Fundação</p>
-				<p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>Mais</p>
-				<Menu model={items} popup ref={menu} id="popup_menu" />
-			</nav>
 		</div>
 	)
 }
