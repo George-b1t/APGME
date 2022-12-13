@@ -4,7 +4,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
 
-  background: var(--gray-100);
+  /* background: var(--gray-100); */
+
+  background-image: url(https://images6.alphacoders.com/427/427470.jpg);
 }
 
 a {

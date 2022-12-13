@@ -9,30 +9,144 @@ import { useRouter } from "next/router";
 
 function Header() {
 	const menu: any = useRef(null);
+	const menu2: any = useRef(null);
+	const menu3: any = useRef(null);
+	const menu4: any = useRef(null);
 
 	const router = useRouter();
 	
-	const items = [
+	const instituicao = [
 		{
 			items: [
 				{
-					label: 'FINALIDADE ESPECÍFICA',
+					label: 'ATA',
 					command: () => {
-						router.push("/finalidade_especifica")
+						router.push("/estatuto")
 					}
 				},
 				{
-					label: 'PODCAST',
+					label: 'ESTATUTO',
 					command: () => {
-						router.push("/podcast")
+						router.push("/estatuto")
 					}
 				},
 				{
-					label: 'PROJETOS',
+					label: 'CNPJ',
 					command: () => {
-						router.push("/projetos")
+						router.push("/estatuto")
 					}
 				}
+			]
+		},
+	];
+
+	const projetos = [
+		{
+			items: [
+				{
+					label: 'SITE',
+					command: () => {
+						router.push("/estatuto")
+					}
+				},
+				{
+					label: 'SURGIMENTO DA MUSICALIDADE SERGIPANA',
+					command: () => {
+						router.push("/estatuto")
+					}
+				},
+				{
+					label: 'A REVITALIZAÇÃO, PROTEÇÃO E CONSERVAÇÃO DO RIO SÃO FRANCISCO',
+					command: () => {
+						router.push("/estatuto")
+					}
+				},
+			]
+		},
+	];
+
+	const pesquisa = [
+		{
+			items: [
+				{
+					label: 'MOVIMENTOS LITERÁRIOS',
+					command: () => {}
+				},
+				{
+					label: 'ENCICLOPÉDIA',
+					command: () => {}
+				},
+				{
+					label: 'EDITAIS',
+					command: () => {}
+				},
+				{
+					label: 'SISTEMA DE INFORMAÇÃO',
+					command: () => {}
+				},
+				{
+					label: 'ROBÓTICA CONTEMPORÂNEA',
+					command: () => {}
+				},
+				{
+					label: 'MUTAÇÕES ACADÊMICAS',
+					command: () => {}
+				},
+				{
+					label: 'MONOGRAFIA',
+					command: () => {}
+				},
+				{
+					label: 'DISSERTAÇÃO EM TESE DE MESTRADO',
+					command: () => {}
+				},
+				{
+					label: 'TESE DE DOUTORADO',
+					command: () => {}
+				},
+				{
+					label: 'GESTÃO PÚBLICA',
+					command: () => {}
+				},
+				{
+					label: 'MEIO AMBIENTE',
+					command: () => {}
+				},
+				{
+					label: 'ARTE - MÚSICA - CULTURA POPULAR',
+					command: () => {}
+				},
+				{
+					label: 'ESPORTE - RELIGIÃO',
+					command: () => {}
+				},
+				{
+					label: 'BIODIVERSIDADE FOLCLÓRICA',
+					command: () => {}
+				},
+				{
+					label: 'VALORIZAÇÃO REGIONAL',
+					command: () => {}
+				},
+			]
+		},
+	];
+
+	const podcast = [
+		{
+			items: [
+				{
+					label: 'CANAL DO YOUTUBE',
+					command: () => {
+						router.push("/estatuto")
+					}
+				},
+				{
+					label: 'DOCUMENTÁRIO',
+					command: () => {
+						router.push("/estatuto")
+					}
+				},
 			]
 		},
 	];
@@ -41,18 +155,24 @@ function Header() {
 		<div className={styles.container}>
 			<div className={styles.subContainer}>
 				<Link href="/" className={styles.leftHeader}>
-					<img src="logo.png" />
-					<h1>A.P.G.M.E</h1>
+					{/* <img src="logo.png" /> */}
+					<h1>APGEA</h1>
 				</Link>
 				
 				<nav className={styles.headerNavigator}>
-					<Link href="/estatuto">Estatuto</Link>
+					{/* <Link href="/estatuto">Estatuto</Link>
 					<Link href="/ata_fundacao">Ata de Fundação</Link>
 					<Link href="/finalidade_especifica">Finalidade Específica</Link>
 					<Link href="/podcast">Podcast</Link>
-					<Link href="/projetos">Projetos</Link>
-					{/* <p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>Mais</p> */}
-					<Menu model={items} popup ref={menu} id="popup_menu" />
+					<Link href="/projetos">Projetos</Link> */}
+					<p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>INSTITUIÇÃO</p>
+					<p onClick={(event) => menu2.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PROJETOS</p>
+					<p onClick={(event) => menu3.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PESQUISA EM SINTONIA</p>
+					<p onClick={(event) => menu4.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PODCAST</p>
+					<Menu model={instituicao} popup ref={menu} id="popup_menu" />
+					<Menu model={projetos} popup ref={menu2} id="popup_menu" />
+					<Menu model={pesquisa} popup ref={menu3} id="popup_menu" />
+					<Menu model={podcast} popup ref={menu4} id="popup_menu" />
 				</nav>
 			</div>
 		</div>

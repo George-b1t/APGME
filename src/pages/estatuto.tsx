@@ -6,7 +6,11 @@ function Estatuto() {
       <div className={styles.subContainer}>
         <h1>Estatuto</h1>
 
-        <p>
+        <div className={styles.fieldDoc}>
+          <img src="estatuto.jpg" alt="Estatuto" />
+        </div>
+
+        {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis gravida tempor. Vestibulum venenatis pellentesque libero, vel placerat dolor elementum placerat. Fusce dictum quis ligula facilisis vulputate. Etiam et quam tellus. Donec eget aliquam odio, at rutrum dolor. Aliquam sed nisi eget turpis sollicitudin aliquam. Aliquam erat volutpat. Nunc id luctus ex. Donec tempus libero sem, ut cursus diam tincidunt eu. Donec dolor mi, consequat vitae enim et, feugiat posuere tellus. Donec et interdum risus, vitae dignissim risus. Aenean vel mauris eget elit varius laoreet. Praesent quis ornare dolor.
         </p>
         <p>
@@ -20,7 +24,7 @@ function Estatuto() {
         </p>
         <p>
           Donec nec nunc mollis, imperdiet neque quis, ullamcorper odio. Quisque in ultrices enim. Cras eleifend nisl non dictum tincidunt. Etiam sit amet libero ut ex lobortis dapibus. Quisque posuere congue nibh eu condimentum. Suspendisse ac lectus purus. Vestibulum at molestie est.
-        </p>
+        </p> */}
       </div>
     </div>
   )
