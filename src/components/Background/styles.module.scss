@@ -1,0 +1,37 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  top: 0;
+
+  z-index: -1;
+
+  div:nth-child(2) {
+    position: absolute;
+
+    left: 0;
+    width: 20px;
+    height: 100vh;
+
+    background-color: #b5722b;
+  }
+
+  div:last-child {
+    position: absolute;
+
+    right: 0;
+    width: 20px;
+    height: 100vh;
+
+    background-color: #b5722b;
+  }
+
+  img {
+    filter: blur(4px) brightness(0.3);
+  }
+}

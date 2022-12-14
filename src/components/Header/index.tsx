@@ -167,7 +167,7 @@ function Header() {
 					<Link href="/projetos">Projetos</Link> */}
 					<p onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>INSTITUIÇÃO</p>
 					<p onClick={(event) => menu2.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PROJETOS</p>
-					<p onClick={(event) => menu3.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PESQUISA EM SINTONIA</p>
+					<p onClick={(event) => menu3.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>A PESQUISA EM SINTONIA</p>
 					<p onClick={(event) => menu4.current.toggle(event)} aria-controls="popup_menu" aria-haspopup>PODCAST</p>
 					<Menu model={instituicao} popup ref={menu} id="popup_menu" />
 					<Menu model={projetos} popup ref={menu2} id="popup_menu" />

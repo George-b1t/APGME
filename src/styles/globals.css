@@ -6,7 +6,7 @@ body {
 
   /* background: var(--gray-100); */
 
-  background-image: url(https://images6.alphacoders.com/427/427470.jpg);
+  /* background-image: url(https://i.pinimg.com/originals/90/43/a7/9043a730ef9d90e2b2e6c92265939457.jpg); */
 }
 
 a {
@@ -22,6 +22,12 @@ a {
 
 .p-menu {
   width: 14rem !important;
+
+  background-color: #e69138 !important;
+}
+
+.p-menuitem-text {
+  color: #000 !important;
 }
 
 .p-menu .p-submenu-header {

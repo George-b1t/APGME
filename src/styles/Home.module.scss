@@ -3,13 +3,35 @@
   justify-content: center;
   align-items: center;
 
+  flex-direction: column;
+
+  position: relative;
+
   height: calc(100vh - 80px);
 
-  h1 {
-    max-width: 1000px;
-    color: #fff;
+  .mainTitle {
+    padding: 0 300px;
+
+    color: #e69138;
 
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
+    font-weight: 600;
   }
+
+  .subTitle {
+    font-size: 100px;
+    letter-spacing: 10px;
+
+    position: absolute;
+    bottom: 40px;
+
+    color: #e69138;
+
+    text-decoration: underline;
+
+    font-weight: 400;
+
+    font-family: "Amatic SC", sans-serif;
+  }  
 }
