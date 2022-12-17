@@ -1,4 +1,4 @@
-import styles from '../styles/Estatuto.module.scss'
+import styles from '../styles/Instituicao.module.scss'
 
 function Estatuto() {
   return (
@@ -7,6 +7,7 @@ function Estatuto() {
         <h1>Estatuto</h1>
 
         <div className={styles.fieldDoc}>
+          <img src="estatuto.jpg" alt="Estatuto" />
           <img src="estatuto.jpg" alt="Estatuto" />
         </div>
 

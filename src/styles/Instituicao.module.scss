@@ -14,9 +14,15 @@
 
     margin-top: 40px;
 
-    background: #fff;
+    // background: #fff;
 
     padding: 40px;
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      width: 100%;
+    }
 
     .fieldDoc {
       overflow-y: scroll;
@@ -24,8 +30,11 @@
 
       padding: 20px;
 
+      gap: 5rem;
+
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
       img {
         border-radius: 5px;

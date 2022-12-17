@@ -21,7 +21,7 @@ function Header() {
 				{
 					label: 'ATA',
 					command: () => {
-						router.push("/estatuto")
+						router.push("/ata")
 					}
 				},
 				{
@@ -33,7 +33,7 @@ function Header() {
 				{
 					label: 'CNPJ',
 					command: () => {
-						router.push("/estatuto")
+						router.push("/cnpj")
 					}
 				}
 			]
