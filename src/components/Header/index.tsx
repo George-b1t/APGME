@@ -6,6 +6,7 @@ import { Button } from "primereact/button";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import projetosList from "../../services/projetos";
 
 function Header() {
 	const menu: any = useRef(null);
@@ -42,26 +43,14 @@ function Header() {
 
 	const projetos = [
 		{
-			items: [
-				{
-					label: 'SITE',
+			items: projetosList.map(projeto => {
+				return {
+					label: projeto.nome,
 					command: () => {
-						router.push("/estatuto")
+						router.push(`/projetos#${projeto.nome}`)
 					}
-				},
-				{
-					label: 'SURGIMENTO DA MUSICALIDADE SERGIPANA',
-					command: () => {
-						router.push("/estatuto")
-					}
-				},
-				{
-					label: 'A REVITALIZAÇÃO, PROTEÇÃO E CONSERVAÇÃO DO RIO SÃO FRANCISCO',
-					command: () => {
-						router.push("/estatuto")
-					}
-				},
-			]
+				}
+			})
 		},
 	];
 
