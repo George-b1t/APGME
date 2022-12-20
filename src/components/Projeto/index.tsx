@@ -12,8 +12,8 @@ function Projeto({ nome, pdf_pratica, pdf_teoria }: ProjetoProps) {
       <h1>{nome}</h1>
 
       <div className={styles.fieldButtons}>
-        <button>Teoria</button>
-        <button>Prática</button>
+        <a target="_blank" href={pdf_teoria}>Teoria</a>
+        <a target="_blank" href={pdf_pratica}>Prática</a>
       </div>
     </div>
   );

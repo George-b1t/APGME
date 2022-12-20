@@ -1,3 +1,4 @@
+import arquivos from '../services/arquivos';
 import styles from '../styles/Instituicao.module.scss'
 
 function Ata() {
@@ -7,8 +8,7 @@ function Ata() {
         <h1>Ata</h1>
 
         <div className={styles.fieldDoc}>
-          <img src="estatuto.jpg" alt="Estatuto" />
-          <img src="estatuto.jpg" alt="Estatuto" />
+          <iframe src={arquivos.find(i => i.nome === "ata")?.arquivo} width="100%" height="100%"></iframe>
         </div>
       </div>
     </div>
